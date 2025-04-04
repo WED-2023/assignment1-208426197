@@ -1,193 +1,228 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
+ <head>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Assistant:wght@400;700&family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+ </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+ <div id="fb-root"></div>
+ 
+ <header id="sticky-header">
+   <div class="header-logo">
+     <img src="toolbar-photo.png" alt="Logo">
+   </div>
+   <div id="toolbar">
+     <ul>
+       <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+       <li><a href="#photos"><i class="fas fa-images"></i> My Photos</a></li>
+       <li><a href="#playlist"><i class="fas fa-music"></i> My Playlist</a></li>
+       <li><a href="#like"><i class="fas fa-thumbs-up"></i> Like</a></li>
+       <li><a href="#qrcoder"><i class="fas fa-qrcode"></i> QR code</a></li>
+       <li><a href="#spa"><i class="fas fa-question-circle"></i> Q&A</a></li>
+       <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Me</a></li>
+     </ul>
+   </div>
+ </header>
+ 
+ <div id="header-spacer"></div>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+ <section id="about" class="section">
+   <h1>About me</h1>
+   <div class="round-container">
+     שלום, אני גידי גוב - זמר, שחקן, מנחה טלוויזיה, ובעיקר אדם שאוהב לצחוק וליהנות מהחיים. 
+     נולדתי וגדלתי בישראל, ואת דרכי בעולם המוזיקה והבידור התחלתי בלהקת הנח"ל, 
+     שם גיליתי את הקסם שבשירה על במה מול קהל. משם המשכתי להיות חלק מכוורת,
+    להקה שהפכה לאחת האהובות והמשפיעות בתרבות הישראלית, עם להיטים שהפכו לנכסי צאן ברזל.  
+    <br>
+    <br>
+    המוזיקה תמיד הייתה חלק ממני,
+    אבל לא הסתפקתי רק בזה - שיחקתי בתיאטרון, בקולנוע ובטלוויזיה, והובלתי תוכניות שהפכו לאייקוניות, כולל כאלה ששילבו שניים מהדברים שאני הכי אוהב: מוזיקה ואוכל.
+    יש לי אהבה מיוחדת לאוכל טוב (ובעיקר לאנשים שמבשלים אותו בשבילי), ולכן היה לי כיף גדול להנחות תוכניות בישול ולפגוש שפים מכל העולם.  
+    <br>
+    <br>
+  אני מאמין שהחיים הם מסע שצריך לקחת בקלילות, עם הרבה הומור, מוזיקה וחוויות טובות.
+  בין הדמויות שהשפיעו עליי תמיד אזכיר את יוסי בנאי ואריק איינשטיין, אנשים שלימדו אותי שאמנות היא לא רק מקצוע, אלא דרך חיים .
+  היום, אחרי קריירה ארוכה ומגוונת, אני ממשיך לעשות את מה שאני אוהב - לשיר, לשחק, להופיע, ובעיקר להצחיק ולרגש אנשים. </div>
+ </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+ <section id="photos" class="section">
+   <h1>My photos</h1>
+   <img src="myphotos1.jpeg"> <img src="myphotos 2.jpeg"> <img src="myphotos3.jpeg"> <img src="myphotos4.jpeg">
+ </section>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+ <section id="playlist" class="section">
+   <h1>My favorite song</h1>
+   <br/>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/w3GmFhSPOdM?si=pXPGghqvEYnJwNoe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </section>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+ <section id="like" class="section"> 
+   <h1>Give me a like!</h1>
+   <div class="like-container">
+     <button id="likeButton" class="like-button">
+       <i class="fas fa-thumbs-up"></i>
+       Like
+     </button>
+     <div class="like-counter" id="likeCounter">0 likes</div>
+   </div>
+ </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+ <section id="qrcoder" class="section">
+   <h1>Scan my code!</h1>
+   <img src="QRcode.png" id="QR img">
+ </section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+ <section id="spa" class="section">
+  <h1>Q&A</h1>
+  <center>
+    <h3> משום מה השאלות הכי נפוצות שאני מקבל הן בכלל קשורות לווב, אינטרנט ופיתוח אתרים
+     אחסוך לכם זמן ואעלה על הפופולריות ביותר עכשיו</h3>
+    <br><br><br>
+    <h2 class="big-question">מה ההבדלים בין סוגי הוובים?</h2>
+  </center>
+  <div class="web-type">
+    <div class="web-type-content">
+      <img src="web1.webp" class="web-img">
+
+      <div class="web-text">
+        <h4>נסתכל על סוגי הוובים הקיימים</h4>
+        <h3>Web1 (האינטרנט הסטטי):</h3>
+        <ul>
+          <li>:השלב הראשון של האינטרנט, עם פונקציונליות בסיסיות, אדפטציה איטים והתבטא במאפיינים הבאים</li>
+          <li>אתרים סטטיים עם תוכן קריאה בלבד (Read-Only).</li>
+          <li>אין אפשרות אינטראקציה או שיתוף תוכן ע"י המשתמשים.</li>
+          <li>דגש על מידע קבוע שמועבר מלמעלה למטה (כמו עיתון דיגיטלי).</li>
+          <li>דוגמאות לאתרים: גרסאות ראשונות של יאהו ואמזון</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="web-type">
+    <div class="web-type-content">
+      <img src="web2.webp" class="web-img">
+      <div class="web-text">
+        <h3>Web2 (האינטרנט החברתי והדינמי):</h3>
+        <ul>
+          <li> הגרסה הזו אופיינה בעלייה של הסושיאל מדיה עם תוכן שהועלה על ידי המשתמשים ודנימיות</li>
+          <li>משתמשים יכולים ליצור ולשתף תוכן (Read-Write).</li>
+          <li>פלטפורמות ריכוזיות (כגון פייסבוק, גוגל, יוטיוב) שולטות בנתונים ובתוכן.</li>
+          <li>פרסום מבוסס משתמשים (User-Generated Content) ומוניטיזציה דרך פרסומות.</li>
+          <li> דוגמאות לאתרים: יוטיוב טוויטר ופייסבוק</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="web-type">
+    <div class="web-type-content">
+      <img src="web3.webp" class="web-img">
+      <div class="web-text">
+        <h3>Web3 (האינטרנט הסמנטי):</h3>
+        <ul>
+          <li>התאפיינה בעלייה של בינה מלאכותית ופרסונליזציה של חווית המשתמש</li>
+          <li>מבוסס בלוקצ'יין – אין גורם מרכזי השולט בנתונים (Decentralized).</li>
+          <li>בעלים אמיתיים של הנתונים – משתמשים שולטים במידע שלהם.</li>
+          <li>,כלכלה מבוססת טוקנים (Tokens) וחוזים חכמים (Smart Contracts).</li>
+          <li>שימוש בדאטא בייסים גדולים, טכנלוגיות API, שיותי ענן .</li>
+          <li> דוגמאות לאתרים:נטפליקס</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="web-type">
+    <div class="web-type-content">
+      <div class="web-text">
+        <h3>?אז איך נראה ההבדל:</h3>
+        <ul>
+          <li>בואו נניח שאנחנו מחפשים על תופעות לוואי של אקמול בשלושת סוגי הווב </li>
+          <li>ווב 1: ינתן לנו אתר של משרד הבריאות עם מידע יבש ולא מעודכן שלא ניתן לקיים בו אינטרקציה</li>
+          <li>ווב 2: חיפוש בגוגל יביא לנו מגוון אתרים, חלקם מוטים לפי ההיסטוריית חיפוש שלנו, כולל פוסטים ברשתות חברתיות בנושא, ניתן להגיב, לתת לייק, להפיץ את העמוד ולתת ביקורת </li>
+          <li>ווב 3:האתרים יהיו מבוססי בלוקציין עם מידע מבוזר משלל מקורות, ללא הטיה מסחרית, ללא פרסומות ועם פרטיות גבוהה</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+ <h1> !כל המידע מובא מהמקור הבא, תעיינו ותעמיקו</h1>
+  <a href="https://acodez.in/evolution-of-the-world-wide-web/#:~:text=Web%201.0%20offered%20read%2Donly,emotional%2C%20human%2Dlike%20interface." target="_blank" >Acodez.com</a>
+  
+  </div>
+
+  
+
+ <section id="contact" class="section">
+   <h3>Contact me</h3>
+   <div class="contact-me">
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="email">כתובת אימייל</label>
+        <input type="email" id="email" name="email" required dir="ltr">
+      </div>
+
+      <div class="form-group">
+        <label for="headliner">כותרת</label>
+        <textarea id="headliner" name="headliner" rows="1" required></textarea>
+      </div>
+
+      <div class ="form-group">
+        <label for="maintext">תוכן ההודעה:</label>
+        <textarea id="maintext" name ="maintext" rows="5" required></textarea>
+        
+      </div>
+
+      <button type="submit" class="submit-btn">שלח</button>
+
+    </form>
+   </div>
+ </section>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
+ <script type="text/javascript">
+ $(function(){
+   $("#nav a").click(function(e){
+     e.preventDefault();
+     $('html,body').scrollTo(this.hash,this.hash); 
+   });
+ });
+ </script>
+ <script type="text/javascript">
  $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
+     $('#menu').toggle($(this).scrollTop()>1000)
+ });
+ </script>
+ <script>
+   document.addEventListener('DOMContentLoaded', function() {
+     const likeButton = document.getElementById('likeButton');
+     const likeCounter = document.getElementById('likeCounter');
+     let likeCount = 0;
+     
+     if(localStorage.getItem('likeCount')) {
+       likeCount = parseInt(localStorage.getItem('likeCount'));
+       updateCounter();
+     }
+     
+     likeButton.addEventListener('click', function() {
+       likeCount++;
+       localStorage.setItem('likeCount', likeCount);
+       updateCounter();
+       
+       likeButton.classList.add('liked');
+       setTimeout(() => {
+         likeButton.classList.remove('liked');
+       }, 300);
+     });
+     
+     function updateCounter() {
+       likeCounter.textContent = likeCount + (likeCount === 1 ? ' like' : ' likes');
+     }
+   });
  </script>
 </body>
 </html>
