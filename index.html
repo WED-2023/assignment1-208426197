@@ -237,5 +237,46 @@
      }
    });
  </script>
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add click event to each emoji
+    const emojis = document.querySelectorAll('.emoji');
+    const textArea = document.getElementById('maintext');
+    
+    emojis.forEach(emoji => {
+      emoji.addEventListener('click', function() {
+        const cursorPosition = textArea.selectionStart;
+        const textBefore = textArea.value.substring(0, cursorPosition);
+        const textAfter = textArea.value.substring(cursorPosition);
+        
+        textArea.value = textBefore + this.textContent + textAfter;
+        
+        textArea.focus();
+        textArea.selectionStart = cursorPosition + this.textContent.length;
+        textArea.selectionEnd = cursorPosition + this.textContent.length;
+      });
+    });
+    
+    const toolbarLinks = document.querySelectorAll('#toolbar a');
+    
+    toolbarLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - 260;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
