@@ -5,6 +5,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="stylesheet" type="text/css" href="style.css" />
    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+   
  </head>
 <body>
  <div id="fb-root"></div>
@@ -156,33 +157,45 @@
   </div>
 
   
-
- <section id="contact" class="section">
-   <h3>Contact me</h3>
-   <div class="contact-me">
-    <form id="contact-form">
-      <div class="form-group">
-        <label for="email">כתובת אימייל</label>
-        <input type="email" id="email" name="email" required dir="ltr">
-      </div>
-
-      <div class="form-group">
-        <label for="headliner">כותרת</label>
-        <textarea id="headliner" name="headliner" rows="1" required></textarea>
-      </div>
-
-      <div class ="form-group">
-        <label for="maintext">תוכן ההודעה:</label>
-        <textarea id="maintext" name ="maintext" rows="5" required></textarea>
-        
-      </div>
-
-      <button type="submit" class="submit-btn">שלח</button>
-
-    </form>
-   </div>
- </section>
-
+  <section id="contact" class="section">
+    <h3>Contact me</h3>
+    <div class="contact-me">
+     <form id="contact-form">
+       <div class="form-group">
+         <label for="email">כתובת אימייל</label>
+         <input type="email" id="email" name="email" required dir="ltr">
+       </div>
+ 
+       <div class="form-group">
+         <label for="headliner">כותרת</label>
+         <textarea id="headliner" name="headliner" rows="1" required></textarea>
+       </div>
+ 
+       <div class="form-group">
+         <label for="maintext">תוכן ההודעה:</label>
+         <textarea id="maintext" name="maintext" rows="5" required></textarea>
+       </div>
+       
+       <div class="emoji-bar">
+         <div class="emoji-label">הוסף אימוג'י:</div>
+         <div class="emoji-container">
+           <span class="emoji">😊</span>
+           <span class="emoji">👍</span>
+           <span class="emoji">❤️</span>
+           <span class="emoji">🎵</span>
+           <span class="emoji">🎸</span>
+           <span class="emoji">🎤</span>
+           <span class="emoji">😂</span>
+           <span class="emoji">👏</span>
+           <span class="emoji">🔥</span>
+           <span class="emoji">✨</span>
+         </div>
+       </div>
+ 
+       <button type="submit" class="submit-btn">שלח</button>
+     </form>
+    </div>
+  </section>
 
  <script type="text/javascript">
  $(function(){
